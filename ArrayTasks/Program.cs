@@ -16,6 +16,7 @@ namespace ArrayTasks
             ArrayOddSum();
             ArrayMinValue();
             ArrayMaxValue();
+            IndexOfArrayElement();
         }
 
         static void ArrayInit()
@@ -221,6 +222,40 @@ namespace ArrayTasks
             }
 
             Console.WriteLine($"The maximum value of the array is: {max}\n");
+        }
+
+        static void IndexOfArrayElement()
+        {
+            // Array initialization and value assignment from console
+
+            Console.Write("Enter array size: ");
+
+            int num = int.Parse(Console.ReadLine());
+
+            int[] arr = new int[num];
+
+            Console.WriteLine("\nInput array values: ");
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = int.Parse(Console.ReadLine());
+            }
+
+            Console.WriteLine();
+
+            Console.Write("Enter array element's value: ");
+
+            int value = int.Parse(Console.ReadLine());
+
+            Console.WriteLine();
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] == value)
+                {
+                    Console.WriteLine($"The index of the array element is: {i}\n");
+                }
+            }
         }
     }
 }
