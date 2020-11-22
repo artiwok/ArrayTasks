@@ -10,13 +10,13 @@ namespace ArrayTasks
     {
         static void Main(string[] args)
         {
-            ArrayInit();
-            ArrayReverse();
-            ArrayEvenSum();
-            ArrayOddSum();
-            ArrayMinValue();
-            ArrayMaxValue();
-            IndexOfArrayElement();
+            //ArrayInit();
+            //ArrayReverse();
+            //ArrayEvenSum();
+            //ArrayOddSum();
+            //ArrayMinValue();
+            //ArrayMaxValue();
+            //IndexOfArrayElement();
             ArrayElementAdded();
         }
 
@@ -292,6 +292,8 @@ namespace ArrayTasks
             {
                 arrTwo[i] = arr[i];
             }
+
+            Console.WriteLine("\nThe updated array elements' values are: ");
 
             for (int i = 0; i < arrTwo.Length; i++)
             {
