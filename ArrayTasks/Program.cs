@@ -243,7 +243,9 @@ namespace ArrayTasks
 
             Console.WriteLine();
 
-            Console.Write("Enter array element's value: ");
+            // Console output of the array element's index 
+
+            Console.Write("Choose one of the above entered array elements' values: ");
 
             int value = int.Parse(Console.ReadLine());
 
